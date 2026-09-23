@@ -1,0 +1,9 @@
+# REFERENCE brittanychiang.com
+
+Projects:
+    ☐ make a dedicated projects page, make it like brittany's website, an archive of all the projects, with a link to the github repo and a link to the live site if applicable.
+    ☐ the "Read Case Study" button, can we find out a way to dynamically make the page based on the projects that are on projects.ts?
+    ☐ the card projects on the main page should lead to the live demo page once clicked, or add a button to view live demo
+
+Experience:
+    ☐ populate the lib for experience
