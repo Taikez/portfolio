@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "devOld": "next dev --turbopack",
+    "build": "npx prisma generate && npx prisma db push && next build",
     "start": "next start",
-    "lint": "eslint",
-    "postinstall": "prisma generate || exit 0"
+    "lint": "next lint",
+    "vercel-build": "prisma generate && prisma migrate deploy && next build"
   },
   "dependencies": {
     "@prisma/adapter-pg": "^7.10.0",
