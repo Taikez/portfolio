@@ -1,3 +1,5 @@
+import prisma from "@/lib/db";
+
 export async function getPublishedPosts() {
   return prisma.post.findMany({
     where: { status: "PUBLISHED" },

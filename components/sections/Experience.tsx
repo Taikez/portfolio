@@ -2,6 +2,11 @@ import { EXPERIENCES } from "@/lib/experience";
 import { MotionSection } from "../ui/MotionSection";
 
 export function ExperienceSection() {
+  // Sort experiences by startDate descending (newest first)
+  const sortedExperiences = [...EXPERIENCES].sort((a, b) => {
+    return new Date(b.startDate).getTime() - new Date(a.startDate).getTime();
+  });
+
   return (
     <MotionSection className="py-16 border-b border-border" delay={0.2}>
       <h2 className="text-2xl font-bold tracking-tight text-foreground mb-8">
@@ -9,7 +14,7 @@ export function ExperienceSection() {
       </h2>
 
       <div className="space-y-10">
-        {EXPERIENCES.map((item) => (
+        {sortedExperiences.map((item) => (
           <div key={item.id} className="relative pl-6 border-l-2 border-border">
             <div className="absolute -left-[5px] top-1.5 h-2 w-2 rounded-full bg-accent" />
             <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 mb-2">

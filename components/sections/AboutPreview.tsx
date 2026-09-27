@@ -19,7 +19,7 @@ export function AboutPreviewSection() {
       </p>
       <Link
         href="/about"
-        className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent hover:underline"
+        className="inline-flex items-center gap-1.5 text-sm font-semibold text-white hover:underline"
       >
         Read more about my background & values{" "}
         <ArrowRight className="w-4 h-4" />

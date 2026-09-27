@@ -20,7 +20,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     category: "Backend & Databases",
-    skills: ["Node.js", "PostgreSQL", "Prisma ORM", "REST APIs", "GraphQL"],
+    skills: ["Spring Boot", "PostgreSQL", "Prisma ORM", "REST APIs", "GraphQL"],
   },
   {
     category: "Tooling & Infrastructure",

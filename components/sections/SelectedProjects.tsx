@@ -23,7 +23,7 @@ export function SelectedProjectsSection() {
           href="/projects"
           className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
         >
-          All projects <ArrowRight className="w-4 h-4" />
+          View projects archive <ArrowRight className="w-4 h-4" />
         </Link>
       </div>
 
@@ -31,22 +31,23 @@ export function SelectedProjectsSection() {
         {featuredProjects.map((project) => (
           <div
             key={project.slug}
-            className="group flex flex-col md:flex-row gap-6 p-6 rounded-lg border border-border bg-surface hover:border-accent/40 transition-colors"
+            className="group/project flex flex-col md:flex-row gap-6 p-6 rounded-lg border border-border bg-surface hover:border-muted-foreground/40 transition-colors"
           >
             {/* Visual Preview */}
             {project.images && project.images.length > 0 && (
               <Link
                 href={`/projects/${project.slug}`}
-                className="shrink-0 overflow-hidden rounded-md border border-border/50 md:w-1/3 bg-muted block"
+                className="shrink-0 overflow-hidden rounded-md border border-border/50 md:w-1/3 bg-surface-muted block"
                 tabIndex={-1}
                 aria-hidden="true"
               >
                 <div className="relative aspect-video w-full h-full min-h-[160px]">
+                  {/* 2. Tied hover to the named group */}
                   <Image
                     src={project.images[0].src}
                     alt={project.images[0].alt}
                     fill
-                    className="object-cover transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+                    className="object-cover transition-transform duration-500 ease-out group-hover/project:scale-[1.03]"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
                 </div>
@@ -56,7 +57,8 @@ export function SelectedProjectsSection() {
             {/* Project Details */}
             <div className="flex flex-col flex-1 justify-center">
               <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-2 mb-3">
-                <h3 className="text-xl font-semibold text-foreground group-hover:text-accent transition-colors">
+                {/* 3. Changed text-accent to text-muted-foreground for dark mode readability */}
+                <h3 className="text-xl font-semibold text-foreground group-hover/project:text-muted-foreground transition-colors">
                   <Link href={`/projects/${project.slug}`}>
                     {project.title}
                   </Link>
@@ -78,7 +80,7 @@ export function SelectedProjectsSection() {
                   {project.technologies.map((tech) => (
                     <span
                       key={tech}
-                      className="px-2.5 py-0.5 rounded text-xs font-mono bg-muted text-muted-foreground border border-border/50"
+                      className="px-2.5 py-0.5 rounded text-xs font-mono bg-surface-muted text-muted-foreground border border-border/50"
                     >
                       {tech}
                     </span>
@@ -102,7 +104,7 @@ export function SelectedProjectsSection() {
           href="/projects"
           className="inline-flex items-center gap-1 text-sm font-medium text-muted-foreground hover:text-foreground"
         >
-          View all projects <ArrowRight className="w-4 h-4" />
+          View projects archive <ArrowRight className="w-4 h-4" />
         </Link>
       </div>
     </MotionSection>

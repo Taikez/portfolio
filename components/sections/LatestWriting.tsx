@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { getPublishedPosts } from "@/lib/posts";
 import { MotionSection } from "../ui/MotionSection";
+import { getPublishedPosts } from "@/actions/posts";
 
 export async function LatestWritingSection() {
   let posts: Awaited<ReturnType<typeof getPublishedPosts>> = [];

@@ -1,10 +1,10 @@
 // app/layout.tsx
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import { SiteHeader } from "@/components/layout/SiteHeader";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import GlowWrapper from "@/components/ui/GlowWrapper";
 
 // Use a highly readable sans-serif family as required[cite: 1]
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -32,13 +32,7 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
+        <GlowWrapper>
           <SiteHeader />
           <main
             id="main-content"
@@ -47,7 +41,7 @@ export default function RootLayout({
             {children}
           </main>
           <SiteFooter />
-        </ThemeProvider>
+        </GlowWrapper>
       </body>
     </html>
   );

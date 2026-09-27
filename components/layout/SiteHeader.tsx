@@ -6,7 +6,6 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import { SITE_CONFIG } from "@/lib/config";
-import { ThemeToggle } from "../ui/ThemeToggle";
 
 const NAV_LINKS = [
   { href: "/about", label: "About" },
@@ -49,14 +48,10 @@ export function SiteHeader() {
           >
             Resume
           </a>
-          <div className="ml-2 pl-6 border-l border-border flex items-center gap-4">
-            <ThemeToggle />
-          </div>
         </nav>
 
         {/* Mobile Toggle */}
         <div className="flex items-center gap-4 md:hidden">
-          <ThemeToggle />
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-border bg-surface text-muted-foreground hover:text-foreground hover:bg-muted transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-focus"

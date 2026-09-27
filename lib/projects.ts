@@ -1,37 +1,35 @@
-export interface ProjectLink {
-  label: string;
-  url: string;
-  type: "live" | "github" | "docs" | "other";
-}
-
 export interface ProjectImage {
   src: string;
   alt: string;
   caption?: string;
 }
 
-export interface Project {
+export type ProjectLink = {
+  label: string;
+  url: string;
+  type: "live" | "github" | string;
+  isPrivate?: boolean;
+};
+
+export type Project = {
   slug: string;
   title: string;
-  /** One-sentence problem/result description used for homepage & index cards */
   tagline: string;
   featured: boolean;
+  shamelessPlug?: boolean;
   technologies: string[];
-
-  // Case Study Sections
-  overview: string;
-  problem: string;
-  constraints?: string[];
+  date: string;
   role: string;
-  approach: string;
+  links: ProjectLink[];
+  overview?: string;
+  problem?: string;
+  constraints?: string[];
+  approach?: string;
   keyDecisions?: string[];
-  outcome: string;
+  outcome?: string;
   lessonsLearned?: string[];
-
-  links?: ProjectLink[];
-  images?: ProjectImage[];
-  date: string; // Format: YYYY-MM
-}
+  images?: Array<{ src: string; alt: string; caption?: string }>;
+};
 
 /**
  * Static project repository.
@@ -44,6 +42,7 @@ export const PROJECTS: Project[] = [
     tagline:
       "An assessment platform that turns learning and thinking patterns into personalized recommendations.",
     featured: true,
+    shamelessPlug: true,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
     date: "2025-12",
 
@@ -92,6 +91,7 @@ export const PROJECTS: Project[] = [
         label: "Source Code",
         url: "https://github.com/yourusername/project-one",
         type: "github",
+        isPrivate: true,
       },
     ],
 
@@ -158,6 +158,7 @@ export const PROJECTS: Project[] = [
         label: "Source Code",
         url: "https://github.com/yourusername/project-one",
         type: "github",
+        isPrivate: true,
       },
     ],
 
@@ -226,6 +227,7 @@ export const PROJECTS: Project[] = [
         label: "Source Code",
         url: "https://github.com/yourusername/project-one",
         type: "github",
+        isPrivate: true,
       },
     ],
 
@@ -295,6 +297,7 @@ export const PROJECTS: Project[] = [
         label: "Source Code",
         url: "https://github.com/yourusername/project-one",
         type: "github",
+        isPrivate: true,
       },
     ],
 
@@ -364,6 +367,7 @@ export const PROJECTS: Project[] = [
         label: "Source Code",
         url: "https://github.com/yourusername/project-one",
         type: "github",
+        isPrivate: true,
       },
     ],
 
@@ -421,6 +425,7 @@ export const PROJECTS: Project[] = [
       "I gained more experience extracting shared behavior into reusable hooks to reduce prop drilling and keep components easier to reason about.",
       "This project reinforced the importance of separating presentation, state management, and interaction logic when building highly interactive interfaces.",
       "If I were rebuilding the project, I would further formalize the story flow as a state machine or configuration-driven system to make adding and reordering sections even easier.",
+      "A gift doesn't need to be expensive to be meaningful; It's the thought and effort that counts.",
     ],
 
     links: [
@@ -433,6 +438,7 @@ export const PROJECTS: Project[] = [
         label: "Source Code",
         url: "https://github.com/yourusername/project-one",
         type: "github",
+        isPrivate: true,
       },
     ],
 

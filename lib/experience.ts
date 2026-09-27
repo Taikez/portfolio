@@ -18,7 +18,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     role: "Lead Full-Stack Engineer",
     company: "Mayora",
     location: "Indonesia",
-    startDate: "2023-04",
+    startDate: "2026-04",
     endDate: "Present",
     description:
       "Lead the development of internal applications used by operational teams across Mayora, with a focus on digitizing business processes for overseas factory transactions and local purchasing operations.",
@@ -34,6 +34,27 @@ export const EXPERIENCES: ExperienceItem[] = [
   },
   {
     id: "exp-2",
+    role: "Full-Stack Engineer",
+    company: "Mayora",
+    location: "Indonesia",
+    startDate: "2024-04",
+    endDate: "2026-04",
+    description:
+      "Developed and maintained internal enterprise applications supporting purchasing and sales distribution operations across Mayora's local factories, working as part of a development team under the guidance of a technical lead.",
+
+    highlights: [
+      "Developed internal applications for local purchasing operations, with a primary focus on packaging material procurement workflows.",
+      "Built and maintained systems supporting sales distribution processes across local factories.",
+      "Implemented backend and server-rendered web functionality using Spring MVC.",
+      "Translated business and operational requirements into application features used by internal teams.",
+      "Worked closely with senior developers and internal stakeholders to troubleshoot issues, improve existing workflows, and deliver new functionality.",
+      "Contributed to application development, testing, bug fixing, deployment, and ongoing maintenance of internal business systems.",
+    ],
+
+    technologies: ["Java", "Spring MVC"],
+  },
+  {
+    id: "exp-3",
     role: "Technical Founder & CTO",
     company: "Vitademy",
     companyUrl: "https://vitademy.space",
@@ -63,7 +84,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     ],
   },
   {
-    id: "exp-3",
+    id: "exp-4",
     role: "Co-Founder",
     company: "Elevance",
     startDate: "2026-05",

@@ -1,9 +1,19 @@
 # REFERENCE brittanychiang.com
+Main Page:
+    ✔ latest writing section @started(26-09-24 15:42) @done(26-09-24 15:46) @lasted(4m5s)
+    ✔ configure prisma @done(26-09-24 15:46)
+
+Admin:
+    ☐ configure admin account
+    ☐ create a dashboard for the admin to manage the content of the website, including blogs, projects, and experience.
+    ☐ CRUD blogs
 
 Projects:
-    ☐ make a dedicated projects page, make it like brittany's website, an archive of all the projects, with a link to the github repo and a link to the live site if applicable.
-    ☐ the "Read Case Study" button, can we find out a way to dynamically make the page based on the projects that are on projects.ts?
-    ☐ the card projects on the main page should lead to the live demo page once clicked, or add a button to view live demo
+    ✔ the "Read Case Study" button, can we find out a way to dynamically make the page based on the projects that are on projects.ts? @started(26-09-24 15:53) @done(26-09-26 09:12) @lasted(1d17h19m12s)
+    ✔ make a dedicated projects page, make it like brittany's website, an archive of all the projects, with a link to the github repo and a link to the live site if applicable. @done(26-09-26 09:00)
 
 Experience:
-    ☐ populate the lib for experience
+    ✔ populate the lib for experience @done(26-09-26 09:00)
+
+About Page:
+    ☐ create a dedicated about page, with a link to the resume and a link to the github repo.
