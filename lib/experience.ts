@@ -15,15 +15,15 @@ export interface ExperienceItem {
 export const EXPERIENCES: ExperienceItem[] = [
   {
     id: "exp-1",
-    role: "Lead Full-Stack Engineer",
+    role: "Full-Stack Engineer",
     company: "Mayora",
     location: "Indonesia",
-    startDate: "2026-04",
+    startDate: "2023-02",
     endDate: "Present",
     description:
       "Lead the development of internal applications used by operational teams across Mayora, with a focus on digitizing business processes for overseas factory transactions and local purchasing operations.",
     highlights: [
-      "Lead a team of 3 junior developers, providing technical direction, code reviews, mentoring, and support throughout the development lifecycle.",
+      "Lead a team of junior developers, providing technical direction, code reviews, mentoring, and support throughout the development lifecycle.",
       "Design and develop in-house applications that support day-to-day operational workflows for internal teams.",
       "Build and maintain systems used to manage transaction processes for overseas factories.",
       "Support local factory purchasing operations by developing tools that improve how purchasing workflows and business data are managed.",
@@ -34,27 +34,6 @@ export const EXPERIENCES: ExperienceItem[] = [
   },
   {
     id: "exp-2",
-    role: "Full-Stack Engineer",
-    company: "Mayora",
-    location: "Indonesia",
-    startDate: "2024-04",
-    endDate: "2026-04",
-    description:
-      "Developed and maintained internal enterprise applications supporting purchasing and sales distribution operations across Mayora's local factories, working as part of a development team under the guidance of a technical lead.",
-
-    highlights: [
-      "Developed internal applications for local purchasing operations, with a primary focus on packaging material procurement workflows.",
-      "Built and maintained systems supporting sales distribution processes across local factories.",
-      "Implemented backend and server-rendered web functionality using Spring MVC.",
-      "Translated business and operational requirements into application features used by internal teams.",
-      "Worked closely with senior developers and internal stakeholders to troubleshoot issues, improve existing workflows, and deliver new functionality.",
-      "Contributed to application development, testing, bug fixing, deployment, and ongoing maintenance of internal business systems.",
-    ],
-
-    technologies: ["Java", "Spring MVC"],
-  },
-  {
-    id: "exp-3",
     role: "Technical Founder & CTO",
     company: "Vitademy",
     companyUrl: "https://vitademy.space",
@@ -84,7 +63,7 @@ export const EXPERIENCES: ExperienceItem[] = [
     ],
   },
   {
-    id: "exp-4",
+    id: "exp-3",
     role: "Co-Founder",
     company: "Elevance",
     startDate: "2026-05",
