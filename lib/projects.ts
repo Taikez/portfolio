@@ -37,10 +37,10 @@ export type Project = {
  */
 export const PROJECTS: Project[] = [
   {
-    slug: "vitademy-web",
-    title: "Vitademy Web",
+    slug: "vitademy",
+    title: "Vitademy",
     tagline:
-      "An assessment platform that turns learning and thinking patterns into personalized recommendations.",
+      "Built an end-to-end assessment platform that transforms user responses into personalized insights and learning recommendations, with structured assessment workflows and a scalable data architecture.",
     featured: true,
     shamelessPlug: true,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
@@ -108,8 +108,8 @@ export const PROJECTS: Project[] = [
     slug: "birocepat-web",
     title: "Birocepat Web",
     tagline:
-      "A modern company website that makes services clear, accessible, and easy to navigate.",
-    featured: true,
+      "A responsive company profile website designed to communicate service offerings clearly and provide prospective customers with an accessible point of contact.",
+    featured: false,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     date: "2026-01",
 
@@ -175,8 +175,8 @@ export const PROJECTS: Project[] = [
     slug: "velora-pack",
     title: "Velora Pack",
     tagline:
-      "A modern website for a packaging company serving logistics and distribution needs.",
-    featured: true,
+      "A responsive corporate website presenting a packaging company's products, services, and business information through a structured digital storefront.",
+    featured: false,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
     date: "2026-03",
 
@@ -244,8 +244,8 @@ export const PROJECTS: Project[] = [
     slug: "velora-pack-dashboard",
     title: "Velora Pack Internal Dashboard",
     tagline:
-      "A role-based internal dashboard for managing customers, leads, inquiries, and orders across the business.",
-    featured: true,
+      "A role-based business management dashboard that centralizes customer records, sales leads, inquiries, and order workflows for different operational teams.",
+    featured: false,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
     date: "2026-03",
 
@@ -314,7 +314,7 @@ export const PROJECTS: Project[] = [
     slug: "hellobake-web",
     title: "HelloBake Web",
     tagline:
-      "A modern e-commerce website for a local bakery to showcase products and make online ordering simple.",
+      "A bakery e-commerce storefront built with Next.js and PostgreSQL, featuring responsive product discovery and a streamlined ordering experience.",
     featured: true,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
     date: "2026-06",
@@ -384,7 +384,7 @@ export const PROJECTS: Project[] = [
     slug: "3-years-wrapped",
     title: "3 Years Wrapped",
     tagline:
-      "A Spotify Wrapped-inspired experience that turns three years of memories into an interactive story.",
+      "A personalized interactive storytelling experience built with Next.js and TypeScript, featuring sequential navigation, shared state management, and animated transitions.",
     featured: true,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS"],
     date: "2026-08",
@@ -455,7 +455,7 @@ export const PROJECTS: Project[] = [
     slug: "monis-office-builder",
     title: "Monis Office Builder",
     tagline:
-      "An interactive office workspace configurator for monis.rent, built around a responsive visual scene with customizable desk setups and focused workspace interactions.",
+      "An interactive office configurator featuring responsive scene composition, independently positioned workspace elements, and animation-driven interactions.",
     featured: true,
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
     date: "2026-10",

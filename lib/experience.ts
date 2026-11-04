@@ -10,6 +10,7 @@ export interface ExperienceItem {
   description: string;
   highlights: string[];
   technologies?: string[];
+  logo?: string; // Optional logo URL for the company
 }
 
 export const EXPERIENCES: ExperienceItem[] = [
@@ -31,6 +32,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       "Contribute across the full development lifecycle, from requirement gathering and system design to implementation, deployment, and maintenance.",
     ],
     technologies: [],
+    logo: "/images/companies/mayora.png",
   },
   {
     id: "exp-2",
@@ -61,6 +63,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       "Clerk",
       "Vercel",
     ],
+    logo: "/images/companies/vitademy.png",
   },
   {
     id: "exp-3",
@@ -78,5 +81,6 @@ export const EXPERIENCES: ExperienceItem[] = [
       "Contribute to business development, positioning, marketing, and the overall direction of the company alongside my co-founder.",
     ],
     technologies: [],
+    logo: "/images/companies/elevance.png",
   },
 ];

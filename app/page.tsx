@@ -1,4 +1,5 @@
 import { AboutPreviewSection } from "@/components/sections/AboutPreview";
+import { ContactSection } from "@/components/sections/Contact";
 import { ExperienceSection } from "@/components/sections/Experience";
 import { HeroSection } from "@/components/sections/Hero";
 import { LatestWritingSection } from "@/components/sections/LatestWriting";
@@ -8,16 +9,15 @@ import { SkillsSection } from "@/components/sections/Skills";
 
 export default function HomePage() {
   return (
-    <div className="space-y-4">
+    <div>
       <HeroSection />
-      <div id="projects">
-        <SelectedProjectsSection />
-      </div>
+      <SkillsSection />
+      <SelectedProjectsSection />
+      <AboutPreviewSection />
       <ShamelessPlugSection />
       <ExperienceSection />
-      <SkillsSection />
-      <AboutPreviewSection />
       <LatestWritingSection />
+      <ContactSection />
     </div>
   );
 }

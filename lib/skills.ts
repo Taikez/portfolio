@@ -7,7 +7,15 @@ export interface SkillCategory {
 export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     category: "Languages & Core",
-    skills: ["TypeScript", "JavaScript", "HTML5", "CSS3 / Tailwind CSS", "SQL"],
+    skills: [
+      "Java",
+      "PHP",
+      "TypeScript",
+      "JavaScript",
+      "HTML5",
+      "CSS3 / Tailwind CSS",
+      "SQL",
+    ],
   },
   {
     category: "Frontend Frameworks & UI",
@@ -20,16 +28,10 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
   {
     category: "Backend & Databases",
-    skills: ["Spring Boot", "PostgreSQL", "Prisma ORM", "REST APIs", "GraphQL"],
+    skills: ["Spring", "PostgreSQL", "Prisma ORM", "REST APIs"],
   },
   {
     category: "Tooling & Infrastructure",
-    skills: [
-      "Git / GitHub",
-      "Docker",
-      "Vercel",
-      "Jest / Vitest",
-      "CI/CD Pipelines",
-    ],
+    skills: ["Git / GitHub", "Docker", "Vercel", "CI/CD Pipelines"],
   },
 ];

@@ -44,7 +44,6 @@ export function SiteFooter() {
         <p>
           © {currentYear} {SITE_CONFIG.name}. All rights reserved.
         </p>
-        <p>Built with Next.js & Tailwind</p>
       </div>
     </footer>
   );

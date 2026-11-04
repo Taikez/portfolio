@@ -13,17 +13,28 @@
   --color-focus-ring: var(--focus-ring);
 }
 
-/* 2. Permanent Dark Theme Tokens */
+/* 2. Permanent Dark Theme Tokens (Tech Slate + Muted Cyber Indigo) */
 :root {
-  --background: #090d16;
+  /* Main Background: Kept your favorite deep techy blue-slate */
+  --background: #0b1121;
   --foreground: #f8fafc;
-  --surface: #0f172a;
-  --surface-muted: #1e293b;
-  --border: #1e293b;
-  --muted-foreground: #94a3b8;
-  --accent: #1e293b;
-  --accent-foreground: #f8fafc;
-  --focus-ring: #cbd5e1;
+
+  /* Elevated surfaces for cards and containers */
+  --surface: #11182b;
+  --surface-muted: #182138;
+
+  /* Subtle borders that blend into the dark blue */
+  --border: #212c46;
+
+  /* Secondary text for subheadings and paragraphs */
+  --muted-foreground: #8b9bb4;
+
+  /* Secondary Color / Accent: A futuristic, slightly muted tech-purple/indigo */
+  --accent: #6c5dd3;
+  --accent-foreground: #ffffff;
+
+  /* Focus rings for keyboard accessibility */
+  --focus-ring: #6c5dd3;
 }
 
 /* 3. Base resets and default styles */
@@ -35,4 +46,21 @@
     background-color: var(--background);
     color: var(--foreground);
   }
+
+  /* Custom selection color to match the new accent */
+  ::selection {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }

@@ -20,7 +20,7 @@ export default function ProjectsArchivePage() {
 
         {/* Title */}
         <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-slate-100 mb-12">
-          All Projects
+          Projects Archive
         </h1>
 
         {/* Desktop Table View */}
