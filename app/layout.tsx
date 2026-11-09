@@ -45,7 +45,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <SiteHeader />
-          <main id="main-content" className="mx-auto px-6 py-12">
+          <main id="main-content" className="w-full flex-1">
             {children}
           </main>
           <SiteFooter />

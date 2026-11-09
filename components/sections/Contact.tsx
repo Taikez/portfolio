@@ -25,7 +25,7 @@ export function ContactSection() {
 
   return (
     <MotionSection className="py-20 md:py-32 border-border" delay={0.2}>
-      <div className="max-w-2xl mx-auto text-center mb-16">
+      <div className="max-w-xl mx-auto text-center mb-16">
         <SectionHeader title="Let's Talk" />
         <SectionSubHeader text="I love what I do, but I'm open to new opportunities. If you have a project in mind or just want to say hi, feel free to reach out!" />
       </div>
